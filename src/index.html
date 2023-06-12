@@ -8,30 +8,214 @@
   <!-- Mainstyle Sheet -->
   <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body>
+<body class="container mx-auto">
     <header>
         <!-- Aside Bar -->
-        <nav class=" container mx-auto h-screen w-[300px] fixed border-r-2">
-            <!-- Brand Image -->
-            <div class="container">
-                <img class="w-20 mx-auto mt-8" src="./assets/images/logo.svg" alt="Brand-Image">
+        <nav>
+            <div class=" container mx-auto h-screen w-[300px] fixed border-r-2">
+                <!-- Brand Image -->
+                <div class="">
+                    <img class="w-20 mx-auto mt-8" src="./assets/images/logo.svg" alt="Brand-Image">
+                </div>
+                <ul class="flex flex-col ml-6 mt-6 gap-3 mb-5">
+                    <li><a href="#" class="font-semibold  text-gray-400 hover:text-black"><i class="bi bi-house text-[25px]"></i> Dashboard</a></li>
+                    <li><a href="#" class="font-semibold text-gray-400 hover:text-black"><i class="bi bi-file-earmark text-[25px]"></i> Pages</a></li>
+                    <li><a href="#" class="font-semibold text-gray-400 hover:text-black"><i class="bi bi-ui-checks-grid text-[25px]"></i> Widgets</a></li>
+                    <li><a href="#" class="font-semibold text-gray-400 hover:text-black"><i class="bi bi-person-plus text-[25px]"></i> Aunthentication</a></li>
+                </ul>
+                <hr>
+                <h4 class="ml-6">Documentation</h4>
+                <ul class="flex flex-col ml-6 mt-3 gap-3 mb-5">
+                    <li><a href="#" class="font-semibold text-gray-400 hover:text-black"><i class="bi bi-clipboard text-[25px]"></i> Basics</a></li>
+                    <li><a href="#" class="font-semibold text-gray-400 hover:text-black"><i class="bi bi-book text-[25px]"></i> Components</a></li>
+                    <li><a href="#" class="font-semibold text-gray-400 hover:text-black"><i class="bi bi-bezier text-[25px]"></i> Changelog</a></li>
+                </ul>
+                <button class="ml-6 bg-blue-600 px-16 py-3 rounded-xl text-white text-lg" type="button"><i class="bi bi-sliders2-vertical"></i> Customize</button>
             </div>
-            <ul class="flex flex-col ml-6 mt-6 gap-3 mb-5">
-                <li><a href="#" class="font-semibold  text-gray-400 hover:text-black"><i class="bi bi-house text-[25px]"></i> Dashboard</a></li>
-                <li><a href="#" class="font-semibold text-gray-400 hover:text-black"><i class="bi bi-file-earmark text-[25px]"></i> Pages</a></li>
-                <li><a href="#" class="font-semibold text-gray-400 hover:text-black"><i class="bi bi-ui-checks-grid text-[25px]"></i> Widgets</a></li>
-                <li><a href="#" class="font-semibold text-gray-400 hover:text-black"><i class="bi bi-person-plus text-[25px]"></i> Aunthentication</a></li>
-            </ul>
-            <hr>
-            <h4 class="ml-6">Documentation</h4>
-            <ul class="flex flex-col ml-6 mt-3 gap-3 mb-5">
-                <li><a href="#" class="font-semibold text-gray-400 hover:text-black"><i class="bi bi-clipboard text-[25px]"></i> Basics</a></li>
-                <li><a href="#" class="font-semibold text-gray-400 hover:text-black"><i class="bi bi-book text-[25px]"></i> Components</a></li>
-                <li><a href="#" class="font-semibold text-gray-400 hover:text-black"><i class="bi bi-bezier text-[25px]"></i> Changelog</a></li>
-            </ul>
-            <button class="ml-6 bg-blue-600 px-16 py-3 rounded-xl text-white text-lg" type="button"><i class="bi bi-sliders2-vertical"></i> Customize</button>
         </nav>
     </header>
+    <main>
+        <section class="ml-[310px]">
+            <div class="flex justify-between items-center">
+                <div class="m-5 ">
+                    <h4 class="text-sm font-bold text-gray-400">OVERVIEW</h4>
+                    <h2 class="text-2xl font-bold">Dashboard</h2>
+                </div>
+                <div class="">
+                    <button type="button" class="mt-5 bg-blue-600 px-5 py-2 text-white rounded-xl">Create Report</button>
+                </div>
+            </div>
+            <hr>
+            <div class="container mx- auto m-7 grid grid-cols-4 gap-3">
+                <div class=" bg-slate-100 h-[80px] w-[200px] rounded-xl">
+                    <h4 class="ml-3 mt-3 font-semibold text-sm text-gray-500">VALUE</h4>
+                    <div class="flex ml-3 gap-2">
+                        <h2 class="font-bold text-xl">$24,500</h2>
+                        <p class="text-sm mt-1 bg-green-300 p-1 rounded-xl text-white">+3.5%</p>
+                        <i class="bi bi-currency-dollar text-2xl text-gray-500"></i>
+                    </div>
+                </div>
+                <div class=" bg-slate-100 h-[80px] w-[200px] rounded-xl">
+                    <h4 class="ml-3 mt-3 font-semibold text-sm text-gray-500">VALUE</h4>
+                    <div class="flex ml-3 gap-2">
+                        <h2 class="font-bold text-xl">$24,500</h2>
+                        <p class="text-sm mt-1 bg-green-300 p-1 rounded-xl text-white">+3.5%</p>
+                        <i class="bi bi-currency-dollar text-2xl text-gray-500"></i>
+                    </div>
+                </div>
+                <div class=" bg-slate-100 h-[80px] w-[200px] rounded-xl">
+                    <h4 class="ml-3 mt-3 font-semibold text-sm text-gray-500">VALUE</h4>
+                    <div class="flex ml-3 gap-2">
+                        <h2 class="font-bold text-xl">$24,500</h2>
+                        <p class="text-sm mt-1 bg-green-300 p-1 rounded-xl text-white">+3.5%</p>
+                        <i class="bi bi-currency-dollar text-2xl text-gray-500"></i>
+                    </div>
+                </div>
+                <div class=" bg-slate-100 h-[80px] w-[200px] rounded-xl">
+                    <h4 class="ml-3 mt-3 font-semibold text-sm text-gray-500">VALUE</h4>
+                    <div class="flex ml-3 gap-2">
+                        <h2 class="font-bold text-xl">$24,500</h2>
+                        <p class="text-sm mt-1 bg-green-300 p-1 rounded-xl text-white">+3.5%</p>
+                        <i class="bi bi-currency-dollar text-2xl text-gray-500"></i>
+                    </div>
+                </div>
+                <div class="container mx-auto grid grid-cols-2">
+                    <div class=" w-[675px] m-8 border rounded-xl">
+                        <img src="./assets/images/Conversions.jpg" class="" alt="">
+                    </div>
+                    <!-- Problem -->
+                    <!-- <div class="w-[200px]">
+                        <img src="./assets/images/Channels.jpg" alt="">
+                    </div> -->
+                </div>
+            </div>
+            <div class="container mx-auto border rounded-xl">
+                <div class="flex justify-between items-center p-5">
+                    <h2 class="font-bold">Goals</h2>
+                    <button type="button" class="border px-3 py-2 rounded-xl">Export</button>
+                </div>
+                <table class="border-collapse border-slate-500 table-auto border-spacing-2 h-[350px] w-[100%]">
+                    <thead>
+                        <tr class="bg-slate-400 pb-8 border">
+                            <th class="p-5">GOAL</th>
+                            <th class="p-5">STATUS</th>
+                            <th class="p-5">PROGRESS</th>
+                            <th class="p-5">DUE DATE</th>
+                            <th class="p-5">TEAM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border">
+                            <th>Update the API</th>
+                            <th>In progress</th>
+                            <th>55%</th>
+                            <th>07/24/18</th>
+                            <th>Update the API</th>
+                        </tr>
+                        <tr class="border">
+                            <th>Update the API</th>
+                            <th>In progress</th>
+                            <th>55%</th>
+                            <th>07/24/18</th>
+                            <th>Update the API</th>
+                        </tr>
+                        <tr class="border">
+                            <th>Update the API</th>
+                            <th>In progress</th>
+                            <th>55%</th>
+                            <th>07/24/18</th>
+                            <th>Update the API</th>
+                        </tr>
+                        <tr class="border">
+                            <th>Update the API</th>
+                            <th>In progress</th>
+                            <th>55%</th>
+                            <th>07/24/18</th>
+                            <th>Update the API</th>
+                        </tr>
+                        <tr class="border">
+                            <th>Update the API</th>
+                            <th>In progress</th>
+                            <th>55%</th>
+                            <th>07/24/18</th>
+                            <th>Update the API</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container mx-auto mt-10 mb-10">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="border rounded p-2">
+                        <div class="flex justify-between items-center p-5">
+                            <h2>Recent Activity</h2>
+                            <button type="button">View All</button>
+                        </div>
+                        <hr>
+                        <!-- image problem -->
+                        <div class="relative ml-6 p-2">
+                            <!-- <img src="./assets/images/avatar-1.jpg" class="w-[30px] h-[20px]" alt="Photo"> -->
+                            <h2 class="font-bold">Dianna Smiley</h2>
+                            <h4>Uploaded the files "Launchday Logo" and <br> "New Design".</h4>
+                            <p>2m ago</p>
+                        </div>
+                        <div class="relative ml-6 p-2">
+                            <!-- <img src="./assets/images/avatar-1.jpg" class="w-[30px] h-[20px]" alt="Photo"> -->
+                            <h2 class="font-bold">Dianna Smiley</h2>
+                            <h4>Uploaded the files "Launchday Logo" and <br> "New Design".</h4>
+                            <p>2m ago</p>
+                        </div>
+                        <div class="relative ml-6 p-2">
+                            <!-- <img src="./assets/images/avatar-1.jpg" class="w-[30px] h-[20px]" alt="Photo"> -->
+                            <h2 class="font-bold">Dianna Smiley</h2>
+                            <h4>Uploaded the files "Launchday Logo" and <br> "New Design".</h4>
+                            <p>2m ago</p>
+                        </div>
+                        <div class="ml-6 p-2">
+                            <!-- <img src="./assets/images/avatar-1.jpg" class="w-[30px] h-[20px]" alt="Photo"> -->
+                            <h2 class="font-bold">Dianna Smiley</h2>
+                            <h4>Uploaded the files "Launchday Logo" and <br> "New Design".</h4>
+                            <p>2m ago</p>
+                        </div>
+                    </div>
+                    <div class="border h-[370px] rounded">
+                        <div class="flex justify-between items-center p-5">
+                            <h3>Scratchpad Checklist</h3>
+                            <p>23 Archived</p>
+                        </div>
+                        <hr>
+                        <!-- Hover problem -->
+                        <div class="form-check p-5">
+                            <input class="form-check-input cursor-pointer" type="checkbox" id="checklistOne">
+                            <label class="form-check-label cursor-pointer">Delete the old mess in functions files.</label>
+                            <br>
+                            <input class="form-check-input cursor-pointer" type="checkbox" id="checklistTwo">
+                            <label class="form-check-label cursor-pointer">Refactor the core social sharing modules.</label>
+                            <br>
+                            <input class="form-check-input cursor-pointer" type="checkbox" id="checklistThree">
+                            <label class="form-check-label cursor-pointer">Create the release notes for the new pages so customers get psyched.</label>
+                            <br>
+                            <input class="form-check-input cursor-pointer" type="checkbox" id="checklistFour">
+                            <label class="form-check-label cursor-pointer">Send Dianna those meeting notes.</label>
+                            <br>
+                            <input class="form-check-input cursor-pointer" type="checkbox" id="checklistFive">
+                            <label class="form-check-label cursor-pointer">Share the documentation for the new unified API.</label>
+                            <br>
+                            <input class="form-check-input cursor-pointer" type="checkbox" id="checklistSix" checked>
+                            <label class="form-check-label cursor-pointer">Clean up the Figma file with all of the avatars, buttons, and other
+                              components.</label>
+                        </div>
+                        <hr>
+                        <div class="flex justify-between items-center p-3">
+                            <textarea class="form-control form-control-flush form-control-auto p-3" data-autosize rows="1" placeholder="Create a task"></textarea>
+                            <button class="ml-[20px] btn btn-sm bg-blue-600 px-3 py-1 rounded-xl text-white">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- npx tailwindcss -i ./src/assets/css/style.css -o ./dist/output.css --watch -->
 </body>
 </html>
